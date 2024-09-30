@@ -1,0 +1,71 @@
+.members-section {
+    width: 80%;
+    max-width: 1200px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 40px
+    
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .members-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .member-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .member-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .member-name {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .member-position {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .members-container::-webkit-scrollbar {
+    width: 0; /* Hides the scrollbar */
+  }
+  
+  @media (max-width: 768px) {
+    .members-section {
+      width: 100%;
+    }
+  
+    .member-card {
+      width: 200px;
+    }
+  }
