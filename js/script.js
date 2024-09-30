@@ -1,23 +1,17 @@
-// Fade in sections on scroll and show menu bar
-window.addEventListener('scroll', function() {
-    const sections = document.querySelectorAll('.section');
-    const header = document.getElementById('header');
-
-    sections.forEach(section => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const triggerBottom = window.innerHeight / 5 * 4;
-
-        if (sectionTop < triggerBottom) {
-            section.classList.add('show');
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.navbar');
+    const heroLogo = document.querySelector('.hero-logo');
+    const navLogo = document.querySelector('.nav-logo');
+    const navTitle = document.querySelector('.nav-title');
+    
+    // Show menu bar on scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            navbar.classList.add('scrolled');
+            navTitle.style.opacity = '1';
         } else {
-            section.classList.remove('show');
+            navbar.classList.remove('scrolled');
+            navTitle.style.opacity = '0';
         }
     });
-
-    // Show menu bar when scrolling down
-    if (window.scrollY > window.innerHeight - 50) {
-        header.style.top = '0'; // Show header
-    } else {
-        header.style.top = '-100px'; // Hide header
-    }
 });
