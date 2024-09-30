@@ -99,7 +99,8 @@ body {
 }
 
 body {
-  background: #0b0a15;
+  background: linear-gradient(135deg, #2c2c2c, #b8b8b8, #d4af37, #c0c0c0);
+  /* 135deg for diagonal direction, adjust the angles to fit your design */
   font-family: "Martel", serif;
   font-size: 1.8rem;
   font-style: normal;
@@ -2444,7 +2445,7 @@ html.no-csstransitions .hero-content {
  * ------------------------------------------------------------------- */
 .s-about {
   padding-bottom: 16rem;
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #000000, #b8b8b8, #d4af37, #c0c0c0);
   position: relative;
 }
 
@@ -2462,7 +2463,7 @@ html.no-csstransitions .hero-content {
 .s-about__section--profile::before {
   content: "";
   display: block;
-  background-color: #b3c2c1;
+  background: linear-gradient(135deg, #000000, #d4af37, #c0c0c0);
   position: absolute;
   top: 0;
   bottom: 0;

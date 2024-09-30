@@ -3,15 +3,17 @@
     max-width: 1200px;
     overflow-x: auto;
     overflow-y: hidden;
-    margin-bottom: 40px
-    
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
   }
   
   .section-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #000000;
   }
   
   .members-container {
@@ -37,7 +39,23 @@
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
-  
+  .member-cardp {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid #798002;
+  }
+  .member-cardp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
   .profile-pic {
     width: 100px;
     height: 100px;
@@ -55,7 +73,9 @@
     color: #777;
     font-size: 0.9rem;
   }
-  
+  footer {
+    bottom: none;
+  }
   .members-container::-webkit-scrollbar {
     width: 0; /* Hides the scrollbar */
   }

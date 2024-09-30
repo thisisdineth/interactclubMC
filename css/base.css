@@ -49,6 +49,8 @@ html {
 /* Remove the margin in all browsers. */
 body {
 	margin: 0;
+	background: linear-gradient(135deg, #2c2c2c, #b8b8b8, #d4af37, #c0c0c0);
+	/* 135deg for diagonal direction, adjust the angles to fit your design */
 }
 
 /* Render the `main` element consistently in IE. */
