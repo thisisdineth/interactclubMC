@@ -1651,8 +1651,8 @@ input::-moz-focus-inner {
 }
 
 .s-header.sticky .header-logo img {
-  width: 35px;
-  height: 38px;
+  width: 100px;
+  height: 100px;
 }
 
 .s-header.sticky .header-content .btn {
@@ -1699,8 +1699,8 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 41px;
-  height: 44px;
+  width: 200px;
+  height: 200px;
   vertical-align: bottom;
 }
 
@@ -1721,6 +1721,7 @@ input::-moz-focus-inner {
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
   margin: 0;
+  margin-left: 200px;
 }
 
 .header-nav a {
