@@ -47,7 +47,7 @@ header ul li a:hover {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('hero.jpg') no-repeat center center/cover;
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
