@@ -7,6 +7,7 @@
     margin-left: 20px;
     margin-right: 20px;
     padding: 5px;
+    align-items: center;
   }
   
   .section-title {
@@ -73,9 +74,7 @@
     color: #777;
     font-size: 0.9rem;
   }
-  footer {
-    bottom: none;
-  }
+
   .members-container::-webkit-scrollbar {
     width: 0; /* Hides the scrollbar */
   }

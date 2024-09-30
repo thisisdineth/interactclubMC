@@ -2822,15 +2822,14 @@ html.no-csstransitions .hero-content {
  * ------------------------------------------------------------------- */
 .s-portfolio {
   padding-top: 24rem;
-  padding-bottom: 0;
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #868484, #d4af37, #b8b8b8, #000000);
   position: relative;
 }
 
 .s-portfolio::before {
   content: "";
   display: block;
-  background-color: #b3c2c1;
+  background: linear-gradient(135deg, #000000, #d4af37, #b8b8b8, #000000);
   position: absolute;
   top: 0;
   right: 0;
