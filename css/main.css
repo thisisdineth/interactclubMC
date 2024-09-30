@@ -2459,7 +2459,7 @@ html.no-csstransitions .hero-content {
   min-height: 108rem;
   position: relative;
 }
-
+/*liner colour*/
 .s-about__section--profile::before {
   content: "";
   display: block;
