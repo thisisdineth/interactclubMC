@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Firebase Setup -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+  <div class="animated-bg"></div>
+  <div class="container">
+    <div class="logo">
+      <img src="your-logo-url.png" alt="Logo">
+      <h1>Contact Us</h1>
+    </div>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="tel" id="contact" placeholder="Contact Number" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="successMessage" class="success-message">Thank you! Your message has been sent.</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
