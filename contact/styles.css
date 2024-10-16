@@ -27,13 +27,34 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
+  /* Close Icon Styling */
+.close-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #ca0f0f;
+    font-size: 50px;
+    text-decoration: none;
+    background-color: rgba(182, 84, 84, 0.2);
+    padding: 5px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1001;
+  }
+  
+  .close-icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #bf0d0d;
+  }
+  
   
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
+    max-width: 100%;
     padding: 20px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -91,4 +112,37 @@
     text-align: center;
     margin-top: 15px;
   }
-  
+
+  @media (max-width: 600px) {
+  .container {
+    width: 100%;  /* Full width of the device */
+    padding: 15px;
+    margin-top: 50px; /* Adjusts for the fixed navbar, if present */
+    top: 45%; /* Slight adjustment for visual alignment */
+    border-radius: 0; /* Optional: Remove border-radius for edge-to-edge look */
+  }
+
+  .logo img {
+    width: 150px; /* Smaller logo for mobile */
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  form input, form textarea {
+    width: 100%; /* Full width of container */
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  form button {
+    width: 100%; /* Full width of container */
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .success-message {
+    font-size: 14px;
+  }
+}
