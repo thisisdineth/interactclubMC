@@ -40,6 +40,7 @@
   padding-right: 30px;
   padding-bottom: 10px;
   padding-left: 30px;
+  background: linear-gradient(120deg, #6e6d6d, #c79a11, #aaaaaa);
 }
 
 .inner-container {
