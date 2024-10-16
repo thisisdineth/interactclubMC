@@ -11,7 +11,7 @@
   }
   
   .animated-bg {
-    background: linear-gradient(120deg, #000000, #c79a11, #aaaaaa);
+    background: linear-gradient(120deg, #484747, #c79a11, #aaaaaa);
     background-size: 600% 600%;
     position: absolute;
     top: 0;
