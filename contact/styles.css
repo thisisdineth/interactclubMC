@@ -7,10 +7,11 @@
   
   body, html {
     height: 100%;
+    overflow: hidden; /* Prevents scrolling */
   }
   
   .animated-bg {
-    background: linear-gradient(120deg, #3498db, #8e44ad, #e74c3c);
+    background: linear-gradient(120deg, #000000, #c79a11, #aaaaaa);
     background-size: 600% 600%;
     position: absolute;
     top: 0;
@@ -28,15 +29,21 @@
   }
   
   .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 500px;
-    margin: 100px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .logo {
@@ -45,7 +52,7 @@
   }
   
   .logo img {
-    width: 50px;
+    width: 200px;
   }
   
   .logo h1 {
@@ -65,7 +72,7 @@
   form button {
     width: 100%;
     padding: 10px;
-    background-color: #3498db;
+    background-color: #096303;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -75,12 +82,12 @@
   }
   
   form button:hover {
-    background-color: #2980b9;
+    background-color: #2adf24;
   }
   
   .success-message {
     display: none;
-    color: #28a745;
+    color: #1cc042;
     text-align: center;
     margin-top: 15px;
   }
