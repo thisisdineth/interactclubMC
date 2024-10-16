@@ -2445,7 +2445,7 @@ html.no-csstransitions .hero-content {
  * ------------------------------------------------------------------- */
 .s-about {
   padding-bottom: 16rem;
-  background: linear-gradient(135deg, #000000, #b8b8b8, #d4af37, #c0c0c0);
+  background: linear-gradient(135deg, #9c9898, #b8b8b8, #d4af37, #c0c0c0);
   position: relative;
 }
 
@@ -3261,6 +3261,8 @@ html.no-csstransitions .hero-content {
   padding-bottom: 8rem;
   background-color: #0b0a15;
   position: relative;
+  bottom: 0;
+  
 }
 
 .s-footer .right-vert-line {
