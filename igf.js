@@ -8,9 +8,11 @@ async function fetchInstagramPosts() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        console.log('API Response:', data);
         if (data.error) {
             console.error('API Error:', data.error.message);
+            if (data.error.message.includes('access token')) {
+                alert('The access token has expired. Please regenerate it.');
+            }
             return;
         }
         displayPosts(data.data);
@@ -18,6 +20,7 @@ async function fetchInstagramPosts() {
         console.error('Error fetching Instagram posts:', error);
     }
 }
+
 
 
 function displayPosts(posts) {
