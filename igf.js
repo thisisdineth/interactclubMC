@@ -1,5 +1,5 @@
-const accessToken = 'YOUR_INSTAGRAM_ACCESS_TOKEN';
-const userId = 'YOUR_INSTAGRAM_USER_ID';
+const accessToken = 'IGQWROTmhzYVAxTU5nd1lidEdNczNEcWRGU3ZAMOWlDNmJVOU1KdjV2VzZAWZAnZA0R0hobXUzbWwzVU9uN3BwUlhrbDBDTDExT2tBc0tRWkswNmluTUFSbGlaQWpLY0ViMGZADSWtjaktoVnM2LVc4VTFyZAXktaDl4aVkZD';
+const userId = '5530711572';
 const limit = 10; // Number of posts to display
 
 async function fetchInstagramPosts() {
