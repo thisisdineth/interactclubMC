@@ -8,14 +8,24 @@ async function fetchInstagramPosts() {
     try {
         const response = await fetch(url);
         const data = await response.json();
+        console.log('API Response:', data);
+        if (data.error) {
+            console.error('API Error:', data.error.message);
+            return;
+        }
         displayPosts(data.data);
     } catch (error) {
         console.error('Error fetching Instagram posts:', error);
     }
 }
 
+
 function displayPosts(posts) {
     const feedContainer = document.getElementById('feed-container');
+    if (!Array.isArray(posts)) {
+        console.error('Invalid posts data:', posts);
+        return;
+    }
     posts.forEach(post => {
         const img = document.createElement('img');
         img.src = post.media_url;
@@ -24,5 +34,6 @@ function displayPosts(posts) {
         feedContainer.appendChild(img);
     });
 }
+
 
 document.addEventListener('DOMContentLoaded', fetchInstagramPosts);
